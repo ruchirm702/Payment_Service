@@ -48,7 +48,7 @@ public class Razorpay_Payment_Gateway implements Payment_Service{
         JSONObject notes = new JSONObject();
 //        notes.put("policy_name","Jeevan Bima");
 //        paymentLinkRequest.put("notes",notes);
-        paymentLinkRequest.put("callback_url","https://scaler.com/");
+        paymentLinkRequest.put("callback_url","https://razorpay.com/");
         paymentLinkRequest.put("callback_method","get");
 
         PaymentLink payment = razorpayClient.paymentLink.create(paymentLinkRequest);

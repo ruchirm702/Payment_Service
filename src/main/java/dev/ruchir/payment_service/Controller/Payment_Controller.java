@@ -18,10 +18,17 @@ public class Payment_Controller {
         public Payment_Controller(Payment_Service payment_service) {
             this.payment_service = payment_service;
         }
+
+
     //POST -> http://localhost:8080/payments
     @PostMapping()
     public String generate_Payment_Link(@RequestBody Generate_Payment_Link_Request_DTO requestDto) throws RazorpayException {
         //Ideally we should handle the exception in the controller using Controller Advice
         return payment_service.generate_Payment_Link(requestDto.getOrder_Id());
+    }
+
+    @PostMapping("/webhook")
+    public void handleWebhookEvent(@RequestBody Object object){
+            System.out.println("Webhook triggered");
     }
 }
