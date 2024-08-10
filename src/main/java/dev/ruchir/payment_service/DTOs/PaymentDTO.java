@@ -7,11 +7,10 @@ import java.math.BigDecimal;
 
 @Getter
 @Setter
-
-public class Generate_Payment_Link_Request_DTO {
-    private Long order_Id;
+public class PaymentDTO {
+    private Long id;
     private BigDecimal amount;
     private String currency;
-    private String description;
-    private String redirectUrl;
+    private String status;
+    private Long orderId;
 }
