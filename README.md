@@ -149,8 +149,8 @@ src
 4. **Configure MySQL database settings in `application.properties`:**
 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/Product_Service
-    spring.datasource.username=Product_Service_User
+    spring.datasource.url=jdbc:mysql://localhost:3306/Payment_Service
+    spring.datasource.username=Payment_Service_User
     spring.datasource.password=your_password
     ```
 
