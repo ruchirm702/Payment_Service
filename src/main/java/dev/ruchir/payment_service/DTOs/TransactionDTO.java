@@ -14,4 +14,6 @@ public class TransactionDTO {
     private String status;
     private LocalDateTime createdAt;
     private Long paymentId;
+    private String currency;
+    private String transactionType;
 }
